@@ -1,0 +1,22 @@
+---
+const { url, label } = Astro.props
+---
+
+
+<a href={url} target="_blank">{label}</a>
+
+<style>
+    a{
+        text-decoration: none;
+        color: var(--primaryColor);
+        margin-top: 1%;
+        background-color: var(--secondaryColor);
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+    }
+    a:hover{
+        background-color: var(--primaryColor);
+        color: var(--secondaryColor);
+    }
+</style>

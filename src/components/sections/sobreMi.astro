@@ -1,0 +1,27 @@
+---
+import { posts, global_avatar, global_nickname } from '../../../informacion.json';
+import Link from '../shared/link.astro';
+
+---
+
+<section class="flex flex-col mx-10">
+    {
+        posts.map((post) => (
+        <div class="flex flex-col gap-3 mt-10 p-3 rounded-lg hover:bg-zinc-800">
+            <div class="flex flex-row gap-4">
+                <img class="w-14 h-14 rounded-full" src={global_avatar} alt="rockthar_avatar" />
+                <div class="flex flex-col">
+                    <h4 class="text-zinc-200 font-bold text-lg">{global_nickname}</h4>
+                    <span class="bg-zinc-300 text-zinc-700 py-0.5 px-3 text-xs w-fit rounded-2xl">{post.chip}</span>
+                </div>
+            </div>
+            <div class="flex flex-col mt-3">
+                <h3 class="text-zinc-200 font-black text-3xl">{post.titulo}</h3>
+                <p class="mt-3 text-zinc-400">{post.descripcion}</p>
+                <img class="w-full rounded-lg object-cover h-80 mt-2" src={post.img} alt={post.titulo}>
+            </div>
+        </div>
+        ))
+    }
+</section>
+

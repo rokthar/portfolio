@@ -1,0 +1,34 @@
+---
+import { tecnologias } from '../../../informacion.json';
+import Chip from '../shared/chip.astro';
+---
+
+<section class=" mt-10 mx-10 p-3">
+    <div class="flex flex-col">
+        <h2 class="text-2xl font-black text-zinc-300">{tecnologias.titulo}</h2>
+        <h3 class="text-xl mt-5 text-zinc-300">{tecnologias.titulo_lenguajes}</h3>
+        <div class="flex flex-row mt-3 gap-3">
+            {
+                tecnologias.lenguajes.map((lenguaje) => (
+                    <Chip label={lenguaje.label} />
+                ))
+            }
+        </div>
+        <h3 class="text-xl mt-5 text-zinc-300">{tecnologias.titulo_frameworks}</h3>
+        <div class="flex flex-row mt-3 gap-3">
+            {
+                tecnologias.frameworks.map((framework) => (
+                    <Chip label={framework.label} />
+                ))
+            }
+        </div>
+        <h3 class="text-xl mt-5 text-zinc-300">{tecnologias.titulo_db}</h3>
+        <div class="flex flex-row mt-3 gap-3">
+            {
+                tecnologias.db.map((db) => (
+                    <Chip label={db.label} />
+                ))
+            }
+        </div>
+    </div>
+</section>
