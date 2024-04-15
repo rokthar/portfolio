@@ -1,150 +1,102 @@
 {
-    "basica":{
-        "nombre": "Ricardo Esparza",
-        "profesion": "Ingeniero de Software",
-        "nickname": "rokthar",
-        "cumple":"04-03-1994",
-        "join":"Abril-2024",
-        "foto": "https://images.pexels.com/photos/2272853/pexels-photo-2272853.jpeg",
-        "foto_banner":"https://images.pexels.com/photos/1003124/pexels-photo-1003124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "email": "riky.paramore@gmail.com",
-        "descripcion": "Me encantaría poder aplicar mis habilidades y conocimientos a nuevos proyectos desafiantes. Si estás buscando un ingeniero de software apasionado y dedicado, no dudes en contactarme."
+    "name": "Ricardo Esparza",
+    "nickname": "rokthar",
+    "mail":"riky.paramore@gmail.com",
+    "profesion": "Ing. Software",
+    "image": "https://avatars.githubusercontent.com/u/1028580?v=4",
+    "about":{
+        "title": "Sobre Mi",
+        "about": "Soy un ingeniero de software apasionado y dedicado. Si estás buscando un ingeniero de software apasionado y dedicado, no dudes en contactarme."
     },
-    "tabs":[
+    "social_networks":[
         {
-            "label":"Sobre mi",
-            "url": "#sobre_mi",
-            "id": "sobre_mi"
+            "name": "GitHub",
+            "link": "https://github.com/rokthar",
+            "user": "@rockthar"
         },
         {
-            "label":"Tecnologías",
-            "url": "#tecnologias",
-            "id": "tecnologias"
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/rokthar/",
+            "user": "@rokthar"
         },
         {
-            "label":"Experiencia",
-            "url": "#experiencia",
-            "id": "experiencia"
+            "name": "Twitter",
+            "link": "https://twitter.com/rokthar",
+            "user": "@rokthar"
         },
         {
-            "label":"Proyectos",
-            "url": "#proyectos",
-            "id": "proyectos"
+            "name": "Instagram",
+            "link": "https://www.instagram.com/rokthar/",
+            "user": "@rokthar"
         }
     ],
-    "global_avatar":"https://images.pexels.com/photos/2272853/pexels-photo-2272853.jpeg",
-    "global_nickname":"rokthar",
-    "posts":[
-        {
-            "chip":"Saludos",
-            "fecha":"11 Abril 2024",
-            "titulo":"Un Saludo",
-            "descripcion":"Brindo mis servicios como desarrollador Full Stack en el sistema de Gestión de Recursos Humanos, colaborando con el equipo de desarrollo de la empresa Buxis en el mantenimiento y evolución del sistema.",
-            "img": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        },
-        {
-            "chip":"Saludos",
-            "fecha":"11 Abril 2024",
-            "titulo":"Un Saludo",
-            "descripcion":"Brindo mis servicios como desarrollador Full Stack en el sistema de Gestión de Recursos Humanos, colaborando con el equipo de desarrollo de la empresa Buxis en el mantenimiento y evolución del sistema.",
-            "img": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        }
-    ],
-    "tecnologias":{
-        "titulo": "Tecnologias que uso",
-        "titulo_lenguajes":"Lenguajes",
-        "titulo_frameworks":"Frameworks",
-        "titulo_db":"Bases de datos",
-        "lenguajes":[
+    "experience":{
+        "title": "Experiencia Profesional",
+        "company": "SmartDev",
+        "jobs":[
             {
-                "label":"Html"
+                "title":"Desarrollador FrontEnd - Mederi",
+                "description":"Corrección de bugs e implementación de nuevos módulos.",
+                "time": "2023 - Presente",
+                "technologies":[
+                    {"label":"Angular"},
+                    {"label":"C#"},
+                    {"label":"Sql Server"}
+                ]
             },
             {
-                "label":"Css"
+                "title":"Desarrollador FrontEnd - GDN",
+                "description":"Implementación del módulo de Vacaciones.",
+                "time": "2023 - Presente",
+                "technologies":[
+                    {"label":"Angular"},
+                    {"label":"C#"},
+                    {"label":"Sql Server"}
+                ]
             },
             {
-                "label":"Javascript"
+                "title":"Desarrollador Full Stack - HMETRO",
+                "description":"Corrección y mejora del módulo de evaluación y desempeño profesional.",
+                "time": "2022 - 2023",
+                "technologies":[
+                    {"label":"Angular"},
+                    {"label":".NET"},
+                    {"label":"Oracle"}
+                ]
             },
             {
-                "label":"C#"
-            }
-        ],
-        "frameworks":[
-            {
-                "label":"Angular"
+                "title": "Desarrollador Full Stack - Telefónica",
+                "description":"Corrección de bugs e implementación de nuevos módulos.",
+                "time": "2021 - 2022",
+                "technologies":[
+                    {"label":"Angular"},
+                    {"label":".NET"},
+                    {"label":"Oracle"}
+                ]
             },
             {
-                "label":".Net"
-            },
-            {
-                "label":"Astro"
-            },
-            {
-                "label":"NodeJs"
-            },
-            {
-                "label":"Express"
-            }
-        ],
-        "db":[
-            {
-                "label":"Sql Server"
-            },
-            {
-                "label":"Oracle"
-            },
-            {
-                "label":"MongoDB"
-            }
-        ]
-    },
-    "experiencia":{
-        "titulo": "Experiencia Profesional",
-        "trabajos":[
-            {
-                "empresa":"SmartDev",
-                "posicion": "Desarrollador Full Stack",
-                "url":"https://www.smartdev.com/",
-                "fecha_inicio": "2021",
-                "fecha_fin": "Actual",
-                "descripcion": "Brindo mis servicios como desarrollador Full Stack en el sistema de Gestión de Recursos Humanos, colaborando con el equipo de desarrollo de la empresa Buxis en el mantenimiento y evolución del sistema.",
-                "tecnologias":[
-                    {
-                        "label":"Angular"
-                    },
-                    {
-                        "label":".Net"
-                    },
-                    {
-                        "label":"Sql Server"
-                    },
-                    {
-                        "label":"Git"
-                    }
+                "title":"Desarrollador BackEnd - Banco de Loja",
+                "description":"Desarrollo del API para el módulo de cobranzas.",
+                "time": "2021 - 2022",
+                "technologies":[
+                    {"label":".NET"},
+                    {"label":"Oracle"}
                 ]
             }
         ]
     },
-    "proyectos":{
-        "titulo": "Proyectos",
-        "proyectos":[
+    "side_projects":{
+        "title": "Proyectos",
+        "projects":[
             {
-                "label":"Proyecto 1",
-                "url":"https://www.google.com/",
-                "descripcion": "Me encantaría poder aplicar mis habilidades y conocimientos a nuevos proyectos desafiantes. Si estás buscando un ingeniero de software apasionado y dedicado, no dudes en contactarme.",
-                "fecha": "2022",
-                "herramientas":[
-                    {
-                        "label":"Angular"
-                    },
-                    {
-                        "label":".Net"
-                    },
-                    {
-                        "label":"Astro"
-                    }
+                "title": "Landing Page - Jhonny Joseph",
+                "description":"Diseño y desarrollo de una landing page para el Sr. Jhonny Joseph que funcione como carta de presentación de cada uno de sus servicios.",
+                "status":"2024",
+                "link": "https://jhonnyjoseph.netlify.app/",
+                "technologies":[
+                    {"label":"Astro"}
                 ]
             }
         ]
     }
-}
+    }

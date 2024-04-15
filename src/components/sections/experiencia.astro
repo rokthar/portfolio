@@ -1,28 +1,26 @@
 ---
-import { experiencia } from '../../../informacion.json';
-import Chip from '../shared/chip.astro';
+import {experience} from '@info'
+import Chip from '../shared/chip.astro'
 ---
 
-<section class="mt-10 mx-10 p-3">
-    <div class="flex flex-col">
-        <h2 class="text-2xl font-black text-zinc-300">{experiencia.titulo}</h2>
-        <div class="flex flex-col mt-5 p-2">
-            {
-                experiencia.trabajos.map((trabajo) => (
-                    <div class="flex flex-row justify-between">
-                        <h3 class="text-xl font-black text-zinc-300">{trabajo.empresa}</h3>
-                        <span class="text-zinc-500">{trabajo.fecha_inicio} - {trabajo.fecha_fin}</span>    
-                    </div>
-                    <p class="mt-3 text-zinc-400">{trabajo.descripcion}</p>
-                    <div class=" flex flex-row gap-3 mt-3 ">
+<section class="flex flex-col">
+    <h1 class="text-xl font-bold text-zinc-200">{experience.title} - {experience.company}</h1>
+    {
+        experience.jobs.map((job) => (
+            <div class="grid grid-cols-4 gap-5 mt-10 max-[500px]:flex max-[500px]:flex-col max-[500px]:gap-2">
+                <span class="text-zinc-400 text-base w-[200px] max-[500px]:text-sm">{job.time}</span>
+                <div class="col-span-3">
+                    <h2 class="text-lg font-bold text-zinc-200 max-[500px]:text-sm">{job.title}</h2>
+                    <p class="text-zinc-400 mt-2">{job.description}</p>
+                    <div class="flex flex-row gap-2 mt-2">
                         {
-                            trabajo.tecnologias.map((tecnologia) => (
-                                <Chip label={tecnologia.label} />
+                            job.technologies.map((tech) => (
+                                <Chip label={tech.label} />
                             ))
                         }
                     </div>
-                ))
-            }
-        </div>
-    </div>
+                </div>
+            </div>
+        ))
+    }
 </section>
